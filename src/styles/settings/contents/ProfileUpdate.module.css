@@ -1,0 +1,129 @@
+.wrap {
+    height: 100%;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;    
+    padding: 0 0 30px 0;
+    position: relative;
+}
+
+.icon button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.defaultIcons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.661);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.defaultIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 25%;
+}
+
+.defaultIcon img {
+    width: 200px;
+}
+
+.defaultIcon button {
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.defaultIcon button:hover {
+    background-color: mediumseagreen;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.close span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(207, 207, 207);
+    height: 2px;
+    width: 100%;
+}
+
+.close span:first-child {
+    transform: translate(-50%, -50%) rotate(45deg); /* 45度回転 */
+}
+
+.close span:last-child {
+    transform: translate(-50%, -50%) rotate(-45deg); /* -45度回転 */
+}
+
+
+.profiles {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.changeInput:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.changeInput div {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.changeInput input {
+    width: 300px;
+    padding: 5px;
+}
+
+.update {
+    margin-top: 50px;
+}
+
+.update button {
+    display: block;
+    background-color: rgb(86, 198, 136);
+    border: none;
+    outline: none;
+    width: 200px;
+    padding: 15px 0;
+    margin: 0 auto;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+}

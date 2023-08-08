@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+  }
+  
+ .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container label {
+    display: flex;
+    gap: 30px;
+  }
+  
+ .container input,
+ .container select {
+    padding: 5px 10px;
+  }
+
+  .good select,
+  .bad select {
+    padding: 5px 30px;
+  }
+
+  .container select option:focus {
+    background-color: #FF0000; /* 選択されたオプションの背景色を赤にする */
+    color: #FFFFFF; /* 選択されたオプションのテキストの色を白にする */
+  }
+  
+ .container button {
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+ .container button:hover {
+    background-color: #002853;
+  }
+  

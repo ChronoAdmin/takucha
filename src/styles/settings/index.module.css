@@ -1,0 +1,14 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.contents {
+    width: 50%;
+    min-width: 600px;
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    box-shadow: 0 0 10px #0000001d;
+    padding: 3%;
+}

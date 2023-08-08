@@ -1,0 +1,35 @@
+.wrap {
+    padding: 0 5%;
+}
+
+.courses {
+    /* border: 1px solid red; */
+}
+
+.courses ul {
+    /* border: 1px solid rgb(93, 0, 255); */
+    margin-top: 3vw;
+    display: flex;
+    gap: 3vw;
+    width: fit-content;
+}
+
+.courses ul li {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.courses ul li a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

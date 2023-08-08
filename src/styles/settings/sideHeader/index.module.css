@@ -1,0 +1,17 @@
+.wrap {
+    background-color: #fff;
+    width: 200px;
+    height: fit-content;
+    padding: 10px 0;
+    box-shadow: 0 0 10px #0000001d;
+}
+
+.wrap ul li {
+    padding: 15px;
+    cursor: pointer;
+    color: mediumseagreen;
+}
+
+.wrap ul li:hover {
+    background-color: #e6e6e6;
+}
