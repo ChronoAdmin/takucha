@@ -1,0 +1,11 @@
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.box {
+    width: 45%;
+    height: 100vh;
+    border: 1px solid red;
+}

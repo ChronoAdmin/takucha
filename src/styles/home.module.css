@@ -1,0 +1,207 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: calc(100vh - 75px);
+    margin-top: 75px;
+    
+  }
+
+  .video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .characters {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .character {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.458));
+    animation: upDown 3s infinite;
+    position: relative;
+  }
+
+  .character::before {
+    position: absolute;
+    top: 0;
+    right: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 150px;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 0;
+    font-family: "Jiyucho";
+    color: #4a4a4a;
+    pointer-events: none;
+  }
+
+  .character1:hover {
+    filter: drop-shadow(0 0 10px rgba(199, 202, 9, 0.57));
+  }
+  .character2:hover {
+    filter: drop-shadow(0 0 10px rgba(12, 202, 9,0.57));
+  }
+  .character3:hover {
+    filter: drop-shadow(0 0 10px rgba(131, 9, 202, 0.57));
+  }
+
+  .character1::before {
+    content: "プラン内容";
+  }
+  .character2::before {
+    content: "サービス";
+  }
+  .character3::before {
+    content: "使い方";
+  }
+  
+  .character1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .character2 {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+  }
+  
+  .character3 {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+  }
+  
+  .section {
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.736);
+    transition: all .3s ease;
+  }
+  
+  .active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  @keyframes upDown {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+
+  .mainText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+  }
+
+  .mainText h1 {
+    font-size: 1.2vw;
+  }
+
+  .mainText h2 {
+    font-size: 3vw;
+    color: #00ff91;
+    font-weight: bold;
+    font-family: "Jiyucho";
+    margin-top: 15px;
+  }
+
+  .mainText a {
+    position: relative;
+    width: 350px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: rgb(151, 95, 255);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px rgb(124, 54, 255) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: all .3s ease-in-out;
+
+  }
+
+  .mainText a::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+}
+
+.mainText a::after {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+  }
+
+  .mainText a:hover {
+    transform: scale(1.05);
+
+  }

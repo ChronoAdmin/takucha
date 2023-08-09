@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     <AuthProvider>
       <ProfileProvider>
         <Layout>
-          <Component {...pageProps} />
+            <Component {...pageProps} />
         </Layout>
       </ProfileProvider>
     </AuthProvider>
